@@ -71,9 +71,9 @@ font-family: sans-serif;
 
 
 .banner_box .img{
-   max-width:40rem;
-   border-radius: 20%;
-   box-shadow: 0 0.5rem 5rem rgb(101, 100, 100);
+    max-width:40rem;
+    border-radius: 20%;
+    box-shadow: 0 0.5rem 5rem rgb(101, 100, 100);
 
 }
 
@@ -116,7 +116,6 @@ font-family: sans-serif;
 
 .saree_cards_section{
     /* border:5px solid red; */
-    height:100vh;
     margin-top:5rem;
 }
 
