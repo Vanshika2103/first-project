@@ -1,0 +1,101 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+:root{
+    --brand-color:rgb(255, 0, 119);
+    --text-color-white:white;
+    --box-shadow-brand:0 0.4rem 1rem 0.5rem rgb(168, 8, 50);
+    --background-gradient:linear-gradient(to right,rgb(240, 42, 115),rgb(255, 0, 102),rgb(240, 10, 125));
+    --link-color:rgb(38, 104, 247);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-image: var(--background-gradient);
+}
+.form_container{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    padding:5rem;
+    background-color: white;
+    max-width: 100%;
+    border-radius:3rem 0.2rem;
+    box-shadow: var(--box-shadow-brand);
+
+
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.login_title{
+    font-size: 2.5rem;
+    color:var(--brand-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.usermail_container,.user_pass_container{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#email_field,#pass_field{
+    padding:5px;
+    margin-left:2rem;
+    width:20rem;
+    outline: none;
+}
+
+#pass_field{
+    margin-left:3rem;
+}
+
+.account_available{
+    font-size: 1.5rem;
+    color:var(--brand-color);
+}
+
+.account_available #no_account_link{
+
+    color:var(--link-color);
+    margin-left:8px;
+
+}
+
+
+.btn_sign_in{
+    color:var(--text-color-white);
+    background-image: var(--background-gradient);
+    width:10rem;
+    padding:5px;
+    text-align: center;
+    margin:auto;
+    margin-top:5px;
+    border-radius:5rem 5rem;
+    font-size: 2rem;
+    outline: none;
+    border:none;
+}
+
+@media screen and (max-width:900px){
+
+    html{
+        font-size: 50%;
+    }
+    .form_container{
+        padding:2rem;
+    }
+    
+}
